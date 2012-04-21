@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AlgUi</class>
+ <widget class="QWidget" name="AlgUi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>330</width>
+    <height>193</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>330</width>
+    <height>193</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>4160</width>
+    <height>3220</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Algorithm</string>
+  </property>
+  <widget class="QGroupBox" name="gbAlg">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>331</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Algorithm Name</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>313</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="outerLayout">
+     <item>
+      <layout class="QVBoxLayout" name="leftInnerLayout">
+       <item>
+        <widget class="QLabel" name="lCurrent">
+         <property name="text">
+          <string>Current Algorithm</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lImage">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="rightInnerLayout">
+       <item>
+        <layout class="QHBoxLayout" name="riUpperLayout">
+         <item>
+          <layout class="QVBoxLayout" name="riuleftLayout">
+           <item>
+            <widget class="QComboBox" name="cbAlgorithms">
+             <property name="editable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbNew">
+           <property name="text">
+            <string>New</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="teNotes"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
