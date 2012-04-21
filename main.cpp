@@ -2,6 +2,7 @@
 #include <QxtBasicSTDLoggerEngine>
 #include <QxtLogger>
 #include "RubikTrainer.h"
+#include <QWidget>
 
 void startLogger();
 int main(int argc, char *argv[])
